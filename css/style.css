@@ -1,0 +1,70 @@
+/* تعریف فونت Vazirmatn */
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('../fonts/vazirmatn/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 250px; /* عرض دلخواه برای پاپ‌آپ */
+  font-family: 'Vazirmatn', sans-serif; /* استفاده از فونت Vazirmatn */
+  direction: rtl; /* راست‌چین */
+  background-color: #ffffff; /* پس‌زمینه سفید ساده */
+}
+
+body {
+  padding: 10px;
+}
+
+/* عنوان و متن توضیحی */
+h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* نمای کلی هر آیتم سایت */
+.site-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* آیتم‌ها را از راست به چپ می‌چیند */
+  gap: 8px; /* فاصله بین آیکن و متن */
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* حالت هاور برای آیتم */
+.site-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+/* آیکن‌ها */
+.site-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.footer {
+  text-align: center;
+  font-family: "Vazirmatn", sans-serif; 
+  font-size: 10px; 
+  color: #555; 
+  padding: 10px 0;
+  border-top: 1px solid #ddd; 
+  margin-top: 20px; 
+}

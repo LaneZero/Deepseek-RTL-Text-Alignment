@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>تست افزونه RTL</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test-section { margin-bottom: 30px; padding: 20px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <div class="test-section">
+        <h1>عنوان اصلی فارسی</h1>
+        <h2>این یک عنوان سطح دو است</h2>
+        <h3>Test عنوان با متن ترکیبی فارسی و انگلیسی</h3>
+    </div>
+
+    <div class="test-section">
+        <ul>
+            <li>مورد اول در لیست</li>
+            <li>Second item with فارسی text</li>
+            <li>مورد سوم در لیست نامرتب</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <ol>
+            <li>شماره یک در لیست مرتب</li>
+            <li>شماره دو با text انگلیسی</li>
+            <li>شماره سه در ordered list</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h4>لیست تو در تو</h4>
+        <ul>
+            <li>آیتم اول
+                <ul>
+                    <li>زیر آیتم اول</li>
+                    <li>زیر آیتم با English text</li>
+                </ul>
+            </li>
+            <li>آیتم دوم</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <code>
+            // این کد نباید راست چین شود
+            const test = "تست";
+        </code>
+        <pre>
+            این متن در تگ pre
+            نباید راست چین شود
+        </pre>
+    </div>
+</body>
+</html>

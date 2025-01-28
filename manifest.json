@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "RTL Alignment for DeepSeek & Other Ai",
+  "version": "1.0",
+  "description": "A browser extension designed to apply RTL alignment and Vazirmatn font specifically for Persian text on DeepSeek and Others platforms.",
+  "permissions": ["activeTab", "storage"],
+  "author": "Ahmad.r1911@gmail.com",
+
+  // این بخش، آیکن افزونه را نشان می‌دهد و یک پاپ‌آپ پیش‌فرض را مشخص می‌کند
+  "action": {
+    "default_popup": "popup.html",
+	"default_title": "RTL DeepSeek"
+  },
+  
+  // اگر می‌خواهید همچنان از این افزونه در همه سایت‌ها استفاده شود
+  "content_scripts": [
+    {
+      "matches": [
+      "*://*.deepseek.com/*",   // همه زیردامنه‌ها + پروتکل‌های http/https
+      "*://deepseek.com/*",     // اگر مستقیم بدون www یا زیر دامنه باشد
+      "*://*.chatgpt.com/*",
+      "*://chatgpt.com/*"
+    ],
+      "css": ["css/font.css"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "fonts/vazirmatn/*"
+      ],
+      "matches": ["https://chatgpt.com/*","https://chat.deepseek.com/*"]
+    }
+  ],
+
+  "icons": {
+	"16": "icons/mainico16px.png",
+    "32": "icons/mainico32px.png",
+    "48": "icons/mainico48px.png",
+    "128":"icons/mainico128px.png"
+  }
+}
+
