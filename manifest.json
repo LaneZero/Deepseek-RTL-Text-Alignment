@@ -4,7 +4,7 @@
   "name": "RTL Alignment for DeepSeek & Other Ai",
   "version": "1.0",
   "short_name": "RTL DeepSeek",
-  "description": "A browser extension designed to apply RTL alignment and Vazirmatn font specifically for Persian text on DeepSeek and Others platforms.",
+  "description": "A browser extension designed to apply RTL alignment and Vazirmatn font specifically for RTL text on DeepSeek and Others platforms.",
   "permissions": ["activeTab", "storage"],
   "author": "Ahmad.r1911@gmail.com",
 
