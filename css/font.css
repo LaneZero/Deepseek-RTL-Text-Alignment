@@ -1,6 +1,12 @@
 @font-face {
   font-family: 'Vazirmatn';
-  src: url('../fonts/vazirmatn/Vazirmatn-Regular.woff2') format('woff2')
+  	src: url('chrome-extension://__MSG_@@extension_id__/fonts/vazirmatn/Vazirmatn-Regular.eot');
+	src:url('chrome-extension://__MSG_@@extension_id__/fonts/vazirmatn/Vazirmatn-Regular.woff2') format('woff2');
+	src: url('chrome-extension://__MSG_@@extension_id__/fonts/vazirmatn/Vazirmatn-Regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('chrome-extension://__MSG_@@extension_id__/fonts/vazirmatn/Vazirmatn-Regular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('chrome-extension://__MSG_@@extension_id__/fonts/vazirmatn/Vazirmatn-Regular.ttf') format('truetype');
+  
+  
   font-weight: normal;
   font-style: normal;
 }
